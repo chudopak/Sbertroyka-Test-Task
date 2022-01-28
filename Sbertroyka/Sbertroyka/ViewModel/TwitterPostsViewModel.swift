@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import SwiftyJSON
 
 protocol TwitterPostsViewModelProtocol {
 	var updatePostsData: ((ViewData) -> ())? { get set }
@@ -20,6 +21,7 @@ final class TwitterPostsViewModel: TwitterPostsViewModelProtocol {
 	lazy var session = URLSession(configuration: sessionConfiguration)
 	
 	public func fetchPostData() {
+
 		guard let url = URL(string: api) else {
 			updatePostsData?(.failure("Can't creaete URL"))
 			return
@@ -33,17 +35,20 @@ final class TwitterPostsViewModel: TwitterPostsViewModelProtocol {
 				}
 				return
 			}
-			
 			guard let data = data else {
 				DispatchQueue.main.async { [weak self] in
 					self?.updatePostsData?(.failure("Can't load data"))
 				}
 				return
 			}
-			
-			print(data as? String ?? "")
+			guard let postsData = self?.parseJSON(data: data) else {
+				DispatchQueue.main.async { [weak self] in
+					self?.updatePostsData?(.failure("Can't parse data"))
+				}
+				return
+			}
 			DispatchQueue.main.async { [weak self] in
-				self?.updatePostsData?(.success(ViewData.PostData(text: "biba", media: nil)))
+				self?.updatePostsData?(.success(ViewData.PostsDataArray(posts: postsData)))
 			}
 		}
 		request.resume()
@@ -55,4 +60,6 @@ final class TwitterPostsViewModel: TwitterPostsViewModelProtocol {
 		configuration.timeoutIntervalForResource = 60
 		return (configuration)
 	}
+
 }
+

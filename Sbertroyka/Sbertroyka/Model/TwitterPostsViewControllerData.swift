@@ -11,16 +11,27 @@ import UIKit
 enum ViewData {
 	case initial
 	case loading
-	case success(PostData)
+	case success(PostsDataArray)
 	case failure(String)
+	
+	struct PostsDataArray {
+		let posts: [PostData]?
+		
+		init() {
+			posts = nil
+		}
+		
+		init(posts: [PostData]) {
+			self.posts = posts
+		}
+	}
 	
 	struct PostData {
 		var text: String = ""
-		var media: Data?
-		
-		init(text: String, media: Data?) {
-			self.text = text
-			self.media = media
-		}
+		var media: UIImage?
+		var craetionDate = Date()
+		var id = ""
+		var favoriteCount = ""
+		var retweetCount = ""
 	}
 }

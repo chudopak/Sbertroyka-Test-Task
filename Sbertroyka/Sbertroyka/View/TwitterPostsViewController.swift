@@ -8,37 +8,36 @@
 import UIKit
 
 class TwitterPostsViewController: UIViewController {
-
-	lazy var tableView = UITableView()
 	
-	let someInfo = ["one", "two", "three", "sadfasdfasfa asd fasd fjasdkj haksdhjf jshadl flsakjhf "]
+	private var viewModel: TwitterPostsViewModelProtocol!
+	
+	private lazy var twitterPostsView = TwitterPostsView(frame: view.bounds)
+	
+	private var postsData: ViewData = .initial {
+		didSet {
+			print("popa")
+		}
+	}
+	
+	init(viewModel: TwitterPostsViewModelProtocol) {
+		super.init(nibName: nil, bundle: nil)
+		self.viewModel = viewModel
+	}
+	
+	required init?(coder: NSCoder) {
+		super.init(coder: coder)
+	}
+	
 	override func viewDidLoad() {
 		super.viewDidLoad()
-		view.backgroundColor = .green
-		tableView.register(UINib(nibName: "TestXib", bundle: nil), forCellReuseIdentifier: "cell")
-		tableView.delegate = self
-		tableView.dataSource = self
-		tableView.backgroundColor = .blue
-		view.addSubview(tableView)
-	}
-	
-	override func viewWillLayoutSubviews() {
-		super.viewWillLayoutSubviews()
-		tableView.frame = view.bounds
-	}
-}
-
-extension TwitterPostsViewController : UITableViewDelegate, UITableViewDataSource {
-
-	func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-		return (someInfo.count)
-	}
-	
-	func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-		if let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as? TestXib {
-			cell.title.text = someInfo[indexPath.row]
-			return (cell)
+		
+		title = "Новости"
+		
+		viewModel.fetchPostData()
+		viewModel.updatePostsData = { [weak self] viewData in
+			self?.postsData = viewData
 		}
-		return (UITableViewCell())
+		view.addSubview(twitterPostsView)
 	}
 }
+

@@ -3,11 +3,13 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		7C97E844F30B8663A23AF72B /* Pods_Sbertroyka.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 137B45B2D4CFDBFB73E52C9A /* Pods_Sbertroyka.framework */; };
+		7D090BAD27A41BAE0012F367 /* TwitterPostsViewModel+ParseJSONextension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D090BAC27A41BAE0012F367 /* TwitterPostsViewModel+ParseJSONextension.swift */; };
+		7D090BB227A456350012F367 /* TwitterPostsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D090BB127A456350012F367 /* TwitterPostsView.swift */; };
 		7D1796FE27A3D96C00E29B26 /* TwitterPostsViewControllerData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D1796FD27A3D96C00E29B26 /* TwitterPostsViewControllerData.swift */; };
 		7D17970127A3DAB800E29B26 /* TestXib.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D1796FF27A3DAB800E29B26 /* TestXib.swift */; };
 		7D17970227A3DAB800E29B26 /* TestXib.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7D17970027A3DAB800E29B26 /* TestXib.xib */; };
@@ -23,6 +25,8 @@
 
 /* Begin PBXFileReference section */
 		137B45B2D4CFDBFB73E52C9A /* Pods_Sbertroyka.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Sbertroyka.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7D090BAC27A41BAE0012F367 /* TwitterPostsViewModel+ParseJSONextension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TwitterPostsViewModel+ParseJSONextension.swift"; sourceTree = "<group>"; };
+		7D090BB127A456350012F367 /* TwitterPostsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TwitterPostsView.swift; sourceTree = "<group>"; };
 		7D1796FD27A3D96C00E29B26 /* TwitterPostsViewControllerData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TwitterPostsViewControllerData.swift; sourceTree = "<group>"; };
 		7D1796FF27A3DAB800E29B26 /* TestXib.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestXib.swift; sourceTree = "<group>"; };
 		7D17970027A3DAB800E29B26 /* TestXib.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TestXib.xib; sourceTree = "<group>"; };
@@ -107,6 +111,7 @@
 			children = (
 				7D1796FF27A3DAB800E29B26 /* TestXib.swift */,
 				7D17970027A3DAB800E29B26 /* TestXib.xib */,
+				7D090BB127A456350012F367 /* TwitterPostsView.swift */,
 			);
 			path = TwitterView;
 			sourceTree = "<group>";
@@ -115,6 +120,7 @@
 			isa = PBXGroup;
 			children = (
 				7D17970927A4040800E29B26 /* TwitterPostsViewModel.swift */,
+				7D090BAC27A41BAE0012F367 /* TwitterPostsViewModel+ParseJSONextension.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -159,7 +165,6 @@
 				93B22F13BC9ADC2929BADBC6 /* Pods-Sbertroyka.debug.xcconfig */,
 				F7D90320E3C09CB563101B67 /* Pods-Sbertroyka.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -285,6 +290,8 @@
 				7DE4BC8F27A00C820025365F /* SceneDelegate.swift in Sources */,
 				7D17970C27A4050500E29B26 /* API.swift in Sources */,
 				7D17970E27A4075F00E29B26 /* Utils.swift in Sources */,
+				7D090BB227A456350012F367 /* TwitterPostsView.swift in Sources */,
+				7D090BAD27A41BAE0012F367 /* TwitterPostsViewModel+ParseJSONextension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
