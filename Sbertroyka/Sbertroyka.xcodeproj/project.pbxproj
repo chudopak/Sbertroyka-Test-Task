@@ -1,0 +1,485 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		7C97E844F30B8663A23AF72B /* Pods_Sbertroyka.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 137B45B2D4CFDBFB73E52C9A /* Pods_Sbertroyka.framework */; };
+		7D1796FE27A3D96C00E29B26 /* TwitterPostsViewControllerData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D1796FD27A3D96C00E29B26 /* TwitterPostsViewControllerData.swift */; };
+		7D17970127A3DAB800E29B26 /* TestXib.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D1796FF27A3DAB800E29B26 /* TestXib.swift */; };
+		7D17970227A3DAB800E29B26 /* TestXib.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7D17970027A3DAB800E29B26 /* TestXib.xib */; };
+		7D17970A27A4040800E29B26 /* TwitterPostsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D17970927A4040800E29B26 /* TwitterPostsViewModel.swift */; };
+		7D17970C27A4050500E29B26 /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D17970B27A4050500E29B26 /* API.swift */; };
+		7D17970E27A4075F00E29B26 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D17970D27A4075F00E29B26 /* Utils.swift */; };
+		7DE4BC8D27A00C820025365F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DE4BC8C27A00C820025365F /* AppDelegate.swift */; };
+		7DE4BC8F27A00C820025365F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DE4BC8E27A00C820025365F /* SceneDelegate.swift */; };
+		7DE4BC9127A00C820025365F /* TwitterPostsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DE4BC9027A00C820025365F /* TwitterPostsViewController.swift */; };
+		7DE4BC9627A00C850025365F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7DE4BC9527A00C850025365F /* Assets.xcassets */; };
+		7DE4BC9927A00C850025365F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7DE4BC9727A00C850025365F /* LaunchScreen.storyboard */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		137B45B2D4CFDBFB73E52C9A /* Pods_Sbertroyka.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Sbertroyka.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7D1796FD27A3D96C00E29B26 /* TwitterPostsViewControllerData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TwitterPostsViewControllerData.swift; sourceTree = "<group>"; };
+		7D1796FF27A3DAB800E29B26 /* TestXib.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestXib.swift; sourceTree = "<group>"; };
+		7D17970027A3DAB800E29B26 /* TestXib.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TestXib.xib; sourceTree = "<group>"; };
+		7D17970927A4040800E29B26 /* TwitterPostsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TwitterPostsViewModel.swift; sourceTree = "<group>"; };
+		7D17970B27A4050500E29B26 /* API.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
+		7D17970D27A4075F00E29B26 /* Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
+		7DE4BC8927A00C820025365F /* Sbertroyka.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Sbertroyka.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		7DE4BC8C27A00C820025365F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		7DE4BC8E27A00C820025365F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		7DE4BC9027A00C820025365F /* TwitterPostsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TwitterPostsViewController.swift; sourceTree = "<group>"; };
+		7DE4BC9527A00C850025365F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		7DE4BC9827A00C850025365F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		7DE4BC9A27A00C850025365F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		93B22F13BC9ADC2929BADBC6 /* Pods-Sbertroyka.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Sbertroyka.debug.xcconfig"; path = "Target Support Files/Pods-Sbertroyka/Pods-Sbertroyka.debug.xcconfig"; sourceTree = "<group>"; };
+		F7D90320E3C09CB563101B67 /* Pods-Sbertroyka.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Sbertroyka.release.xcconfig"; path = "Target Support Files/Pods-Sbertroyka/Pods-Sbertroyka.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		7DE4BC8627A00C820025365F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7C97E844F30B8663A23AF72B /* Pods_Sbertroyka.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		57E06F520C683700DAB628ED /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				137B45B2D4CFDBFB73E52C9A /* Pods_Sbertroyka.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		7D1796FC27A3D84A00E29B26 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				7D1796FD27A3D96C00E29B26 /* TwitterPostsViewControllerData.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		7D17970327A3EFF900E29B26 /* Delegate */ = {
+			isa = PBXGroup;
+			children = (
+				7DE4BC8E27A00C820025365F /* SceneDelegate.swift */,
+				7DE4BC8C27A00C820025365F /* AppDelegate.swift */,
+			);
+			path = Delegate;
+			sourceTree = "<group>";
+		};
+		7D17970427A3F17100E29B26 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				7D17970727A3F1D700E29B26 /* TwitterView */,
+				7D17970627A3F1A600E29B26 /* LoadView */,
+				7D17970527A3F19B00E29B26 /* ErrorView */,
+				7DE4BC9027A00C820025365F /* TwitterPostsViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		7D17970527A3F19B00E29B26 /* ErrorView */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ErrorView;
+			sourceTree = "<group>";
+		};
+		7D17970627A3F1A600E29B26 /* LoadView */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = LoadView;
+			sourceTree = "<group>";
+		};
+		7D17970727A3F1D700E29B26 /* TwitterView */ = {
+			isa = PBXGroup;
+			children = (
+				7D1796FF27A3DAB800E29B26 /* TestXib.swift */,
+				7D17970027A3DAB800E29B26 /* TestXib.xib */,
+			);
+			path = TwitterView;
+			sourceTree = "<group>";
+		};
+		7D17970827A403E000E29B26 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				7D17970927A4040800E29B26 /* TwitterPostsViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		7DE4BC8027A00C820025365F = {
+			isa = PBXGroup;
+			children = (
+				7DE4BC8B27A00C820025365F /* Sbertroyka */,
+				7DE4BC8A27A00C820025365F /* Products */,
+				BAA5362770DB0094094B2E85 /* Pods */,
+				57E06F520C683700DAB628ED /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		7DE4BC8A27A00C820025365F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7DE4BC8927A00C820025365F /* Sbertroyka.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7DE4BC8B27A00C820025365F /* Sbertroyka */ = {
+			isa = PBXGroup;
+			children = (
+				7D17970827A403E000E29B26 /* ViewModel */,
+				7D17970427A3F17100E29B26 /* View */,
+				7D17970327A3EFF900E29B26 /* Delegate */,
+				7D1796FC27A3D84A00E29B26 /* Model */,
+				7DE4BC9527A00C850025365F /* Assets.xcassets */,
+				7DE4BC9727A00C850025365F /* LaunchScreen.storyboard */,
+				7DE4BC9A27A00C850025365F /* Info.plist */,
+				7D17970B27A4050500E29B26 /* API.swift */,
+				7D17970D27A4075F00E29B26 /* Utils.swift */,
+			);
+			path = Sbertroyka;
+			sourceTree = "<group>";
+		};
+		BAA5362770DB0094094B2E85 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				93B22F13BC9ADC2929BADBC6 /* Pods-Sbertroyka.debug.xcconfig */,
+				F7D90320E3C09CB563101B67 /* Pods-Sbertroyka.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		7DE4BC8827A00C820025365F /* Sbertroyka */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7DE4BC9D27A00C850025365F /* Build configuration list for PBXNativeTarget "Sbertroyka" */;
+			buildPhases = (
+				4994C430211820996B83B2CA /* [CP] Check Pods Manifest.lock */,
+				7DE4BC8527A00C820025365F /* Sources */,
+				7DE4BC8627A00C820025365F /* Frameworks */,
+				7DE4BC8727A00C820025365F /* Resources */,
+				E5D9FB8B115390DF2CF2796F /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Sbertroyka;
+			productName = Sbertroyka;
+			productReference = 7DE4BC8927A00C820025365F /* Sbertroyka.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		7DE4BC8127A00C820025365F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1250;
+				LastUpgradeCheck = 1250;
+				TargetAttributes = {
+					7DE4BC8827A00C820025365F = {
+						CreatedOnToolsVersion = 12.5;
+					};
+				};
+			};
+			buildConfigurationList = 7DE4BC8427A00C820025365F /* Build configuration list for PBXProject "Sbertroyka" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 7DE4BC8027A00C820025365F;
+			productRefGroup = 7DE4BC8A27A00C820025365F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				7DE4BC8827A00C820025365F /* Sbertroyka */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		7DE4BC8727A00C820025365F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7DE4BC9927A00C850025365F /* LaunchScreen.storyboard in Resources */,
+				7DE4BC9627A00C850025365F /* Assets.xcassets in Resources */,
+				7D17970227A3DAB800E29B26 /* TestXib.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		4994C430211820996B83B2CA /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Sbertroyka-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E5D9FB8B115390DF2CF2796F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Sbertroyka/Pods-Sbertroyka-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Sbertroyka/Pods-Sbertroyka-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Sbertroyka/Pods-Sbertroyka-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		7DE4BC8527A00C820025365F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7D17970A27A4040800E29B26 /* TwitterPostsViewModel.swift in Sources */,
+				7D1796FE27A3D96C00E29B26 /* TwitterPostsViewControllerData.swift in Sources */,
+				7DE4BC9127A00C820025365F /* TwitterPostsViewController.swift in Sources */,
+				7DE4BC8D27A00C820025365F /* AppDelegate.swift in Sources */,
+				7D17970127A3DAB800E29B26 /* TestXib.swift in Sources */,
+				7DE4BC8F27A00C820025365F /* SceneDelegate.swift in Sources */,
+				7D17970C27A4050500E29B26 /* API.swift in Sources */,
+				7D17970E27A4075F00E29B26 /* Utils.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		7DE4BC9727A00C850025365F /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7DE4BC9827A00C850025365F /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		7DE4BC9B27A00C850025365F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		7DE4BC9C27A00C850025365F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		7DE4BC9E27A00C850025365F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 93B22F13BC9ADC2929BADBC6 /* Pods-Sbertroyka.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = LQHXF935P7;
+				INFOPLIST_FILE = Sbertroyka/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = bibosorganisation.Sbertroyka;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		7DE4BC9F27A00C850025365F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F7D90320E3C09CB563101B67 /* Pods-Sbertroyka.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = LQHXF935P7;
+				INFOPLIST_FILE = Sbertroyka/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = bibosorganisation.Sbertroyka;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		7DE4BC8427A00C820025365F /* Build configuration list for PBXProject "Sbertroyka" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7DE4BC9B27A00C850025365F /* Debug */,
+				7DE4BC9C27A00C850025365F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7DE4BC9D27A00C850025365F /* Build configuration list for PBXNativeTarget "Sbertroyka" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7DE4BC9E27A00C850025365F /* Debug */,
+				7DE4BC9F27A00C850025365F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 7DE4BC8127A00C820025365F /* Project object */;
+}
