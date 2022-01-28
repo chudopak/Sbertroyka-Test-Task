@@ -32,6 +32,7 @@ class TwitterPostsView: UIView {
 	
 	override init(frame: CGRect) {
 		super.init(frame: frame)
+		translatesAutoresizingMaskIntoConstraints = false
 		tableView.register(UINib(nibName: "TestXib", bundle: nil), forCellReuseIdentifier: "cell")
 		tableView.delegate = self
 		tableView.dataSource = self
