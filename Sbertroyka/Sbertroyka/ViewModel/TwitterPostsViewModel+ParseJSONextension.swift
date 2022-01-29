@@ -49,24 +49,19 @@ extension TwitterPostsViewModel {
 		
 		if (post["text"].exists() && post["text"].string != nil) {
 			postData.text = post["text"].stringValue
-			print(postData.text)
 		}
 		if (post["id"].exists()) {
 			postData.id = post["id"].stringValue
-			print(postData.id)
 		}
 		if (post["createdAt"].exists() && post["createdAt"].double != nil) {
 			let seccondsFrom1970 = post["createdAt"].doubleValue * 0.001
 			postData.craetionDate = Date(timeIntervalSince1970: seccondsFrom1970)
-			print(postData.craetionDate)
 		}
 		if (post["retweetCount"].exists()) {
 			postData.retweetCount = compressPostNumbers(numberStr: post["retweetCount"].stringValue)
-			print(postData.retweetCount)
 		}
 		if (post["favoriteCount"].exists()) {
 			postData.favoriteCount = compressPostNumbers(numberStr: post["favoriteCount"].stringValue)
-			print(postData.favoriteCount)
 		}
 		//this is for test cause no post with media :)
 		postData.media = "https://i.ytimg.com/vi/Zr-qM5Vrd0g/maxresdefault.jpg"

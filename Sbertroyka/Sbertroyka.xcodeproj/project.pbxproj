@@ -17,7 +17,6 @@
 		7D17970227A3DAB800E29B26 /* PostTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7D17970027A3DAB800E29B26 /* PostTableViewCell.xib */; };
 		7D17970A27A4040800E29B26 /* TwitterPostsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D17970927A4040800E29B26 /* TwitterPostsViewModel.swift */; };
 		7D17970C27A4050500E29B26 /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D17970B27A4050500E29B26 /* API.swift */; };
-		7D17970E27A4075F00E29B26 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D17970D27A4075F00E29B26 /* Utils.swift */; };
 		7D70F77F27A5B61E00999AA5 /* Date+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D70F77E27A5B61E00999AA5 /* Date+Extension.swift */; };
 		7D70F78227A5B71400999AA5 /* PostWithMediaTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D70F78027A5B71400999AA5 /* PostWithMediaTableViewCell.swift */; };
 		7D70F78327A5B71400999AA5 /* PostWithMediaTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7D70F78127A5B71400999AA5 /* PostWithMediaTableViewCell.xib */; };
@@ -46,7 +45,6 @@
 		7D17970027A3DAB800E29B26 /* PostTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PostTableViewCell.xib; sourceTree = "<group>"; };
 		7D17970927A4040800E29B26 /* TwitterPostsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TwitterPostsViewModel.swift; sourceTree = "<group>"; };
 		7D17970B27A4050500E29B26 /* API.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
-		7D17970D27A4075F00E29B26 /* Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
 		7D70F77E27A5B61E00999AA5 /* Date+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Extension.swift"; sourceTree = "<group>"; };
 		7D70F78027A5B71400999AA5 /* PostWithMediaTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostWithMediaTableViewCell.swift; sourceTree = "<group>"; };
 		7D70F78127A5B71400999AA5 /* PostWithMediaTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PostWithMediaTableViewCell.xib; sourceTree = "<group>"; };
@@ -198,7 +196,6 @@
 				7DE4BC9727A00C850025365F /* LaunchScreen.storyboard */,
 				7DE4BC9A27A00C850025365F /* Info.plist */,
 				7D17970B27A4050500E29B26 /* API.swift */,
-				7D17970D27A4075F00E29B26 /* Utils.swift */,
 			);
 			path = Sbertroyka;
 			sourceTree = "<group>";
@@ -342,7 +339,6 @@
 				7D17970127A3DAB800E29B26 /* PostTableViewCell.swift in Sources */,
 				7DE4BC8F27A00C820025365F /* SceneDelegate.swift in Sources */,
 				7D17970C27A4050500E29B26 /* API.swift in Sources */,
-				7D17970E27A4075F00E29B26 /* Utils.swift in Sources */,
 				7D70F78527A5BD6100999AA5 /* UIImageView+DownloadImageExtension.swift in Sources */,
 				7D81676927A54086006408F1 /* ErrorViewElementsSize.swift in Sources */,
 				7D70F78827A5C67400999AA5 /* StaticTableViewCell.swift in Sources */,
