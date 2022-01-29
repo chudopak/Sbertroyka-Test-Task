@@ -14,5 +14,5 @@ let loadingViewWidth = UIScreen.main.bounds.width < loadingViewHeight ? UIScreen
 let lodingLabelHeight = loadingViewHeight * 0.2
 
 let activityIndicatorHeight = loadingViewWidth * 0.40
-let activityIndicatorWidht = loadingViewWidth * 0.40
+let activityIndicatorWidth = loadingViewWidth * 0.40
 let activityIndicatorCenterOffset =  -0.1 * loadingViewHeight

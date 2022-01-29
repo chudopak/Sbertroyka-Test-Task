@@ -44,17 +44,17 @@ class TwitterPostsLoadingView: UIView {
 	
 	func setConstraints() {
 		NSLayoutConstraint.activate([
-			loadingLabel.bottomAnchor.constraint(equalTo: bottomAnchor),
-			loadingLabel.rightAnchor.constraint(equalTo: rightAnchor),
-			loadingLabel.leftAnchor.constraint(equalTo: leftAnchor),
-			loadingLabel.heightAnchor.constraint(equalToConstant: lodingLabelHeight)
-		])
-		
-		NSLayoutConstraint.activate([
 			activityIndicator.centerXAnchor.constraint(equalTo: centerXAnchor),
 			activityIndicator.centerYAnchor.constraint(equalTo: centerYAnchor, constant: activityIndicatorCenterOffset),
 			activityIndicator.heightAnchor.constraint(equalToConstant: activityIndicatorHeight),
-			activityIndicator.widthAnchor.constraint(equalToConstant: activityIndicatorWidht)
+			activityIndicator.widthAnchor.constraint(equalToConstant: activityIndicatorWidth)
+		])
+
+		NSLayoutConstraint.activate([
+			loadingLabel.topAnchor.constraint(equalTo: activityIndicator.bottomAnchor),
+			loadingLabel.rightAnchor.constraint(equalTo: rightAnchor),
+			loadingLabel.leftAnchor.constraint(equalTo: leftAnchor),
+			loadingLabel.heightAnchor.constraint(equalToConstant: lodingLabelHeight)
 		])
 	}
 

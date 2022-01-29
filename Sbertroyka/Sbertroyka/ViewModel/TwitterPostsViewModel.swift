@@ -23,7 +23,7 @@ final class TwitterPostsViewModel: TwitterPostsViewModelProtocol {
 	public func fetchPostData() {
 
 		guard let url = URL(string: api) else {
-			updatePostsData?(.failure("Can't creaete URL"))
+			updatePostsData?(.failure(.urlCreation))
 			return
 		}
 		updatePostsData?(.loading)
@@ -31,19 +31,19 @@ final class TwitterPostsViewModel: TwitterPostsViewModelProtocol {
 			
 			guard let httpResponse = response as? HTTPURLResponse, httpResponse.statusCode == 200 else {
 				DispatchQueue.main.async { [weak self] in
-					self?.updatePostsData?(.failure("Bad httpResponse"))
+					self?.updatePostsData?(.failure(.httpResponse))
 				}
 				return
 			}
 			guard let data = data else {
 				DispatchQueue.main.async { [weak self] in
-					self?.updatePostsData?(.failure("Can't load data"))
+					self?.updatePostsData?(.failure(.noData))
 				}
 				return
 			}
 			guard let postsData = self?.parseJSON(data: data) else {
 				DispatchQueue.main.async { [weak self] in
-					self?.updatePostsData?(.failure("Can't parse data"))
+					self?.updatePostsData?(.failure(.noData))
 				}
 				return
 			}
@@ -57,7 +57,7 @@ final class TwitterPostsViewModel: TwitterPostsViewModelProtocol {
 	private func _setURLSessionConfiguration() -> URLSessionConfiguration {
 		let configuration = URLSessionConfiguration.default
 		configuration.waitsForConnectivity = true
-		configuration.timeoutIntervalForResource = 60
+		configuration.timeoutIntervalForResource = 10
 		return (configuration)
 	}
 

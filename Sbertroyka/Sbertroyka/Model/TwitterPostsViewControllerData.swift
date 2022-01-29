@@ -12,7 +12,7 @@ enum ViewData {
 	case initial
 	case loading
 	case success(PostsDataArray)
-	case failure(String)
+	case failure(FailCode)
 	
 	struct PostsDataArray {
 		let posts: [PostData]?
@@ -33,5 +33,12 @@ enum ViewData {
 		var id = ""
 		var favoriteCount = ""
 		var retweetCount = ""
+	}
+	
+	enum FailCode {
+		case urlCreation
+		case httpResponse
+		case noData
+		
 	}
 }

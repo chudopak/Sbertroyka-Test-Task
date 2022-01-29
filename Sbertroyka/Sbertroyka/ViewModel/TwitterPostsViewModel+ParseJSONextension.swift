@@ -23,10 +23,6 @@ extension TwitterPostsViewModel {
 		do {
 			json = try JSON(data: data)
 		} catch {
-			DispatchQueue.main.async { [weak self] in
-				self?.updatePostsData?(.failure("Can't parse json"))
-				print("cant parse")
-			}
 			return (nil)
 		}
 		guard json["success"].exists() && json["success"] == true && json["data"].exists() else {
