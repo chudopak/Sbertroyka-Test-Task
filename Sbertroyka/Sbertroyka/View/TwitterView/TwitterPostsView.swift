@@ -26,7 +26,11 @@ class TwitterPostsView: UIView {
 	
 	private lazy var tableView = UITableView()
 	
-	var posts = ViewData.PostsDataArray()
+	var posts = ViewData.PostsDataArray() {
+		didSet {
+			setNeedsLayout()
+		}
+	}
 	
 	let someInfo = ["one", "two", "three", "sadfasdfasfa asd fasd fjasdkj haksdhjf jshadl flsakjhf "]
 	

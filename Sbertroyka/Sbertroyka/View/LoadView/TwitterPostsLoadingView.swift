@@ -23,7 +23,6 @@ class TwitterPostsLoadingView: UIView {
 	lazy var loadingLabel: UILabel = {
 		let label = UILabel()
 		label.translatesAutoresizingMaskIntoConstraints = false
-//		label.textColor = adaptiveTintColor
 		label.numberOfLines = 1
 		label.textAlignment = .center
 		label.text = "Загрузка..."
@@ -35,12 +34,12 @@ class TwitterPostsLoadingView: UIView {
 	
 	override init(frame: CGRect) {
 		super.init(frame: frame)
-		backgroundColor = .red
 		translatesAutoresizingMaskIntoConstraints = false
 	}
 	
 	required init?(coder: NSCoder) {
 		super.init(coder: coder)
+		translatesAutoresizingMaskIntoConstraints = false
 	}
 	
 	func setConstraints() {

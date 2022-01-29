@@ -18,6 +18,7 @@
 		7D17970A27A4040800E29B26 /* TwitterPostsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D17970927A4040800E29B26 /* TwitterPostsViewModel.swift */; };
 		7D17970C27A4050500E29B26 /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D17970B27A4050500E29B26 /* API.swift */; };
 		7D17970E27A4075F00E29B26 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D17970D27A4075F00E29B26 /* Utils.swift */; };
+		7D81676727A52E06006408F1 /* TwitterPostsErrorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D81676627A52E06006408F1 /* TwitterPostsErrorView.swift */; };
 		7DE4BC8D27A00C820025365F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DE4BC8C27A00C820025365F /* AppDelegate.swift */; };
 		7DE4BC8F27A00C820025365F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DE4BC8E27A00C820025365F /* SceneDelegate.swift */; };
 		7DE4BC9127A00C820025365F /* TwitterPostsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DE4BC9027A00C820025365F /* TwitterPostsViewController.swift */; };
@@ -37,6 +38,7 @@
 		7D17970927A4040800E29B26 /* TwitterPostsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TwitterPostsViewModel.swift; sourceTree = "<group>"; };
 		7D17970B27A4050500E29B26 /* API.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
 		7D17970D27A4075F00E29B26 /* Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
+		7D81676627A52E06006408F1 /* TwitterPostsErrorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TwitterPostsErrorView.swift; sourceTree = "<group>"; };
 		7DE4BC8927A00C820025365F /* Sbertroyka.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Sbertroyka.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7DE4BC8C27A00C820025365F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7DE4BC8E27A00C820025365F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -99,6 +101,7 @@
 		7D17970527A3F19B00E29B26 /* ErrorView */ = {
 			isa = PBXGroup;
 			children = (
+				7D81676627A52E06006408F1 /* TwitterPostsErrorView.swift */,
 			);
 			path = ErrorView;
 			sourceTree = "<group>";
@@ -294,6 +297,7 @@
 				7DE4BC9127A00C820025365F /* TwitterPostsViewController.swift in Sources */,
 				7D090BB427A460A50012F367 /* TwitterPostsLoadingView.swift in Sources */,
 				7DE4BC8D27A00C820025365F /* AppDelegate.swift in Sources */,
+				7D81676727A52E06006408F1 /* TwitterPostsErrorView.swift in Sources */,
 				7D17970127A3DAB800E29B26 /* TestXib.swift in Sources */,
 				7DE4BC8F27A00C820025365F /* SceneDelegate.swift in Sources */,
 				7D17970C27A4050500E29B26 /* API.swift in Sources */,

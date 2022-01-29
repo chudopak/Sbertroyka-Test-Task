@@ -32,23 +32,15 @@ class TwitterPostsViewController: UIViewController {
 	override func viewDidLoad() {
 		super.viewDidLoad()
 		
-		title = "Новости"
-		
 		viewModel.fetchPostData()
 		viewModel.updatePostsData = { [weak self] viewData in
 			self?.postsData = viewData
 		}
-		view.addSubview(postsView)
-		view.addSubview(loadingView)
-		postsView.isHidden = true
-		setConstraints()
-		loadingView.setConstraints()
-		loadingView.activityIndicator.startAnimating()
+		configureView()
 	}
 	
 	override func viewWillLayoutSubviews() {
 		super.viewWillLayoutSubviews()
-		
 	}
 	
 	private func updateView() {
@@ -60,20 +52,29 @@ class TwitterPostsViewController: UIViewController {
 				loadingView.activityIndicator.startAnimating()
 			}
 		case .success(let postsDataArray):
-			postsView.isHidden = true
-			loadingView.isHidden = false
+			postsView.isHidden = false
+			loadingView.isHidden = true
 			if (loadingView.activityIndicator.isAnimating) {
 				loadingView.activityIndicator.stopAnimating()
 			}
 			postsView.posts = postsDataArray
-			postsView.setNeedsLayout()
 		case .failure(_):
-			loadingView.isHidden = false
 			postsView.isHidden = true
+			loadingView.isHidden = true
 			if (loadingView.activityIndicator.isAnimating) {
 				loadingView.activityIndicator.stopAnimating()
 			}
 		}
+	}
+	
+	private func configureView() {
+		title = "Новости"
+		view.addSubview(postsView)
+		view.addSubview(loadingView)
+		postsView.isHidden = true
+		setConstraints()
+		loadingView.setConstraints()
+		loadingView.activityIndicator.startAnimating()
 	}
 	
 	private func setConstraints() {
@@ -81,7 +82,7 @@ class TwitterPostsViewController: UIViewController {
 			postsView.centerXAnchor.constraint(equalTo: view.centerXAnchor),
 			postsView.centerYAnchor.constraint(equalTo: view.centerYAnchor),
 			postsView.widthAnchor.constraint(equalTo: view.widthAnchor),
-			postsView.heightAnchor.constraint(equalTo: view.widthAnchor)
+			postsView.heightAnchor.constraint(equalTo: view.heightAnchor)
 		])
 		
 		NSLayoutConstraint.activate([
