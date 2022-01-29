@@ -81,6 +81,11 @@ class TwitterPostsViewController: UIViewController, TwitterPostsViewControllerDe
 	private func configureView() {
 		view.backgroundColor = adaptiveViewBackgroundColor
 		title = "Новости"
+//		navigationController?.navigationBar.barTintColor = UIColor(named: "background")
+//		navigationController?.view.backgroundColor = UIColor(named: "background")
+		navigationController?.navigationBar.backgroundColor = UIColor(named: "background")
+		view.backgroundColor = UIColor(named: "background")
+		
 		view.addSubview(postsView)
 		view.addSubview(loadingView)
 		view.addSubview(errorView)

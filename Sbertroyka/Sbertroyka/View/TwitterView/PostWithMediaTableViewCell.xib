@@ -19,7 +19,7 @@
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7eD-Wt-ccu">
-                        <rect key="frame" x="15" y="56" width="333" height="44"/>
+                        <rect key="frame" x="15" y="61" width="333" height="27"/>
                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
@@ -159,13 +159,13 @@
                         </constraints>
                     </view>
                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ehE-2p-Khv">
-                        <rect key="frame" x="15" y="105" width="333" height="120"/>
+                        <rect key="frame" x="15" y="100" width="333" height="120"/>
                         <constraints>
                             <constraint firstAttribute="height" constant="120" id="li0-SX-QSt"/>
                         </constraints>
                         <userDefinedRuntimeAttributes>
                             <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                                <integer key="value" value="7"/>
+                                <integer key="value" value="10"/>
                             </userDefinedRuntimeAttribute>
                         </userDefinedRuntimeAttributes>
                     </imageView>
@@ -174,12 +174,12 @@
                     <constraint firstAttribute="bottom" secondItem="nm4-Q2-fmL" secondAttribute="bottom" constant="5" id="0CF-Ve-Jg8"/>
                     <constraint firstAttribute="trailing" secondItem="7eD-Wt-ccu" secondAttribute="trailing" constant="15" id="4JH-J4-Wou"/>
                     <constraint firstAttribute="trailing" secondItem="ehE-2p-Khv" secondAttribute="trailing" constant="15" id="9e7-XG-rfk"/>
-                    <constraint firstItem="nm4-Q2-fmL" firstAttribute="top" secondItem="ehE-2p-Khv" secondAttribute="bottom" constant="5" id="9kY-Oz-Cyq"/>
+                    <constraint firstItem="nm4-Q2-fmL" firstAttribute="top" secondItem="ehE-2p-Khv" secondAttribute="bottom" constant="10" id="9kY-Oz-Cyq"/>
                     <constraint firstItem="rKa-vg-ae3" firstAttribute="top" secondItem="46b-j6-vpT" secondAttribute="top" constant="5" id="CaV-6U-Oug"/>
                     <constraint firstItem="ehE-2p-Khv" firstAttribute="leading" secondItem="46b-j6-vpT" secondAttribute="leading" constant="15" id="TLq-LU-ja7"/>
                     <constraint firstAttribute="trailing" secondItem="rKa-vg-ae3" secondAttribute="trailing" constant="15" id="dko-1J-crj"/>
-                    <constraint firstItem="ehE-2p-Khv" firstAttribute="top" secondItem="7eD-Wt-ccu" secondAttribute="bottom" constant="5" id="gu8-Fh-5ff"/>
-                    <constraint firstItem="7eD-Wt-ccu" firstAttribute="top" secondItem="rKa-vg-ae3" secondAttribute="bottom" constant="5" id="hKS-g0-IMo"/>
+                    <constraint firstItem="ehE-2p-Khv" firstAttribute="top" secondItem="7eD-Wt-ccu" secondAttribute="bottom" constant="12" id="gu8-Fh-5ff"/>
+                    <constraint firstItem="7eD-Wt-ccu" firstAttribute="top" secondItem="rKa-vg-ae3" secondAttribute="bottom" constant="10" id="hKS-g0-IMo"/>
                     <constraint firstItem="rKa-vg-ae3" firstAttribute="leading" secondItem="46b-j6-vpT" secondAttribute="leading" constant="15" id="hpB-36-j9y"/>
                     <constraint firstItem="nm4-Q2-fmL" firstAttribute="leading" secondItem="46b-j6-vpT" secondAttribute="leading" constant="15" id="r7i-Io-tf3"/>
                     <constraint firstItem="7eD-Wt-ccu" firstAttribute="leading" secondItem="46b-j6-vpT" secondAttribute="leading" constant="15" id="s5K-Vg-bBF"/>
@@ -187,6 +187,8 @@
                 </constraints>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="981-T7-CrE"/>
+            <color key="backgroundColor" name="background"/>
+            <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
             <connections>
                 <outlet property="dateLabel" destination="lkD-he-Agt" id="7nv-1g-X7W"/>
                 <outlet property="favoritesLabel" destination="oQb-9u-brB" id="d4v-Qw-b1s"/>
@@ -203,6 +205,9 @@
         <image name="checkmark.seal.fill" catalog="system" width="128" height="128"/>
         <image name="heart" catalog="system" width="128" height="109"/>
         <image name="twitterImg" width="24" height="24"/>
+        <namedColor name="background">
+            <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
         <namedColor name="twitter.tint">
             <color red="0.113" green="0.63100000000000001" blue="0.94899999999999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>

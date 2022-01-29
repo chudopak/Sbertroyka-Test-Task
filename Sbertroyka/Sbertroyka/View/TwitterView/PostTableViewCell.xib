@@ -19,7 +19,7 @@
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="35U-Wt-83b">
-                        <rect key="frame" x="15" y="56" width="362" height="169"/>
+                        <rect key="frame" x="15" y="61" width="362" height="159"/>
                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
@@ -163,16 +163,18 @@
                     <constraint firstItem="35U-Wt-83b" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="0T0-MV-eLm"/>
                     <constraint firstItem="xf5-w7-Uyq" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="5" id="0w3-5M-qof"/>
                     <constraint firstAttribute="trailing" secondItem="8Rs-vh-Qgh" secondAttribute="trailing" constant="15" id="CUR-Vh-IW2"/>
-                    <constraint firstItem="8Rs-vh-Qgh" firstAttribute="top" secondItem="35U-Wt-83b" secondAttribute="bottom" constant="5" id="DSU-oE-Gbb"/>
+                    <constraint firstItem="8Rs-vh-Qgh" firstAttribute="top" secondItem="35U-Wt-83b" secondAttribute="bottom" constant="10" id="DSU-oE-Gbb"/>
                     <constraint firstItem="8Rs-vh-Qgh" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="W9j-aV-wQ8"/>
                     <constraint firstAttribute="bottom" secondItem="8Rs-vh-Qgh" secondAttribute="bottom" constant="5" id="kAu-Ym-aoc"/>
                     <constraint firstItem="xf5-w7-Uyq" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="sKx-hd-VWN"/>
                     <constraint firstAttribute="trailing" secondItem="xf5-w7-Uyq" secondAttribute="trailing" constant="15" id="veA-4F-TR8"/>
                     <constraint firstAttribute="trailing" secondItem="35U-Wt-83b" secondAttribute="trailing" constant="15" id="wvK-Qf-0dB"/>
-                    <constraint firstItem="35U-Wt-83b" firstAttribute="top" secondItem="xf5-w7-Uyq" secondAttribute="bottom" constant="5" id="ysQ-79-16W"/>
+                    <constraint firstItem="35U-Wt-83b" firstAttribute="top" secondItem="xf5-w7-Uyq" secondAttribute="bottom" constant="10" id="ysQ-79-16W"/>
                 </constraints>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <color key="backgroundColor" name="background"/>
+            <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
             <connections>
                 <outlet property="date" destination="Z1O-ku-0f2" id="4I1-xl-KDx"/>
                 <outlet property="favoriteLabel" destination="pts-lp-weR" id="Lvq-X9-XEa"/>
@@ -188,6 +190,9 @@
         <image name="checkmark.seal.fill" catalog="system" width="128" height="128"/>
         <image name="heart" catalog="system" width="128" height="109"/>
         <image name="twitterImg" width="24" height="24"/>
+        <namedColor name="background">
+            <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
         <namedColor name="twitter.tint">
             <color red="0.113" green="0.63100000000000001" blue="0.94899999999999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>

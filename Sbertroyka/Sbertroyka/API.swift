@@ -10,3 +10,5 @@ import Foundation
 let api = "https://devapp.mosmetro.ru/api/tweets/v1.0/"
 
 let postPage = "https://twitter.com/MetroOperativno/status/"
+
+let twitterPage = "https://twitter.com/MetroOperativno"

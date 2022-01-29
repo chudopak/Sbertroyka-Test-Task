@@ -57,7 +57,7 @@ final class TwitterPostsViewModel: TwitterPostsViewModelProtocol {
 	private func _setURLSessionConfiguration() -> URLSessionConfiguration {
 		let configuration = URLSessionConfiguration.default
 		configuration.waitsForConnectivity = true
-		configuration.timeoutIntervalForResource = 10
+		configuration.timeoutIntervalForResource = 30
 		return (configuration)
 	}
 
