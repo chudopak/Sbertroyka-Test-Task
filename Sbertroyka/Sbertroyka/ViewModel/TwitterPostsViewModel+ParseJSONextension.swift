@@ -61,46 +61,32 @@ extension TwitterPostsViewModel {
 			print(postData.craetionDate)
 		}
 		if (post["retweetCount"].exists()) {
-			postData.retweetCount = post["retweetCount"].stringValue
+			postData.retweetCount = compressPostNumbers(numberStr: post["retweetCount"].stringValue)
 			print(postData.retweetCount)
 		}
 		if (post["favoriteCount"].exists()) {
-			postData.favoriteCount = post["favoriteCount"].stringValue
+			postData.favoriteCount = compressPostNumbers(numberStr: post["favoriteCount"].stringValue)
 			print(postData.favoriteCount)
 		}
+		//this is for test cause no post with media :)
+		postData.media = "https://i.ytimg.com/vi/Zr-qM5Vrd0g/maxresdefault.jpg"
+
 		if (post["mediaEntities"].exists() && post["mediaEntities"].array != nil) {
 			let array = post["mediaEntities"].arrayValue
 			if (!array.isEmpty) {
-				postData.media = downloadPicture(from: array[0].stringValue)
+				postData.media = array[0].stringValue
 			}
 		}
-		
 		return (postData)
 	}
 	
-	private func downloadPicture(from url: URL) -> UIImage? {
-		var picture: UIImage?
-		URLSession.shared.dataTask(with: url) { data, response, error in
-			guard
-				let httpURLResponse = response as? HTTPURLResponse, httpURLResponse.statusCode == 200,
-				let data = data, error == nil,
-				let image = UIImage(data: data)
-			else {
-				print("Error - can't fetch profile image")
-				picture = nil
-				return
-			}
-			picture = image
-		}.resume()
-		return (picture)
-	}
-
-	private func downloadPicture(from link: String) -> UIImage? {
-		guard let url = URL(string: link) else {
-			print("Error - can't create URL for profile image")
-			return (nil)
+	private func compressPostNumbers(numberStr: String) -> String {
+		guard let nb = Int(numberStr), nb >= 1000 else {
+			return (numberStr)
 		}
-		let image = downloadPicture(from: url)
-		return (image)
+		if (1000 <= nb && nb <= 1_000_000) {
+			return (String(nb / 1000) + "К")
+		}
+		return (String(nb / 1_000_000) + "M")
 	}
 }

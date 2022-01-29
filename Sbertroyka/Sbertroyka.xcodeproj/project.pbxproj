@@ -13,11 +13,15 @@
 		7D090BB427A460A50012F367 /* TwitterPostsLoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D090BB327A460A50012F367 /* TwitterPostsLoadingView.swift */; };
 		7D090BB627A464D00012F367 /* LoadingViewElementsSize.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D090BB527A464D00012F367 /* LoadingViewElementsSize.swift */; };
 		7D1796FE27A3D96C00E29B26 /* TwitterPostsViewControllerData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D1796FD27A3D96C00E29B26 /* TwitterPostsViewControllerData.swift */; };
-		7D17970127A3DAB800E29B26 /* TestXib.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D1796FF27A3DAB800E29B26 /* TestXib.swift */; };
-		7D17970227A3DAB800E29B26 /* TestXib.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7D17970027A3DAB800E29B26 /* TestXib.xib */; };
+		7D17970127A3DAB800E29B26 /* PostTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D1796FF27A3DAB800E29B26 /* PostTableViewCell.swift */; };
+		7D17970227A3DAB800E29B26 /* PostTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7D17970027A3DAB800E29B26 /* PostTableViewCell.xib */; };
 		7D17970A27A4040800E29B26 /* TwitterPostsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D17970927A4040800E29B26 /* TwitterPostsViewModel.swift */; };
 		7D17970C27A4050500E29B26 /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D17970B27A4050500E29B26 /* API.swift */; };
 		7D17970E27A4075F00E29B26 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D17970D27A4075F00E29B26 /* Utils.swift */; };
+		7D70F77F27A5B61E00999AA5 /* Date+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D70F77E27A5B61E00999AA5 /* Date+Extension.swift */; };
+		7D70F78227A5B71400999AA5 /* PostWithMediaTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D70F78027A5B71400999AA5 /* PostWithMediaTableViewCell.swift */; };
+		7D70F78327A5B71400999AA5 /* PostWithMediaTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7D70F78127A5B71400999AA5 /* PostWithMediaTableViewCell.xib */; };
+		7D70F78527A5BD6100999AA5 /* UIImageView+DownloadImageExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D70F78427A5BD6100999AA5 /* UIImageView+DownloadImageExtension.swift */; };
 		7D81676727A52E06006408F1 /* TwitterPostsErrorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D81676627A52E06006408F1 /* TwitterPostsErrorView.swift */; };
 		7D81676927A54086006408F1 /* ErrorViewElementsSize.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D81676827A54086006408F1 /* ErrorViewElementsSize.swift */; };
 		7D81676B27A543F7006408F1 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D81676A27A543F7006408F1 /* Colors.swift */; };
@@ -35,11 +39,15 @@
 		7D090BB327A460A50012F367 /* TwitterPostsLoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TwitterPostsLoadingView.swift; sourceTree = "<group>"; };
 		7D090BB527A464D00012F367 /* LoadingViewElementsSize.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingViewElementsSize.swift; sourceTree = "<group>"; };
 		7D1796FD27A3D96C00E29B26 /* TwitterPostsViewControllerData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TwitterPostsViewControllerData.swift; sourceTree = "<group>"; };
-		7D1796FF27A3DAB800E29B26 /* TestXib.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestXib.swift; sourceTree = "<group>"; };
-		7D17970027A3DAB800E29B26 /* TestXib.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TestXib.xib; sourceTree = "<group>"; };
+		7D1796FF27A3DAB800E29B26 /* PostTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostTableViewCell.swift; sourceTree = "<group>"; };
+		7D17970027A3DAB800E29B26 /* PostTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PostTableViewCell.xib; sourceTree = "<group>"; };
 		7D17970927A4040800E29B26 /* TwitterPostsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TwitterPostsViewModel.swift; sourceTree = "<group>"; };
 		7D17970B27A4050500E29B26 /* API.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
 		7D17970D27A4075F00E29B26 /* Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
+		7D70F77E27A5B61E00999AA5 /* Date+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Extension.swift"; sourceTree = "<group>"; };
+		7D70F78027A5B71400999AA5 /* PostWithMediaTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostWithMediaTableViewCell.swift; sourceTree = "<group>"; };
+		7D70F78127A5B71400999AA5 /* PostWithMediaTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PostWithMediaTableViewCell.xib; sourceTree = "<group>"; };
+		7D70F78427A5BD6100999AA5 /* UIImageView+DownloadImageExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+DownloadImageExtension.swift"; sourceTree = "<group>"; };
 		7D81676627A52E06006408F1 /* TwitterPostsErrorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TwitterPostsErrorView.swift; sourceTree = "<group>"; };
 		7D81676827A54086006408F1 /* ErrorViewElementsSize.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorViewElementsSize.swift; sourceTree = "<group>"; };
 		7D81676A27A543F7006408F1 /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
@@ -124,9 +132,11 @@
 		7D17970727A3F1D700E29B26 /* TwitterView */ = {
 			isa = PBXGroup;
 			children = (
-				7D1796FF27A3DAB800E29B26 /* TestXib.swift */,
-				7D17970027A3DAB800E29B26 /* TestXib.xib */,
+				7D1796FF27A3DAB800E29B26 /* PostTableViewCell.swift */,
+				7D17970027A3DAB800E29B26 /* PostTableViewCell.xib */,
 				7D090BB127A456350012F367 /* TwitterPostsView.swift */,
+				7D70F78027A5B71400999AA5 /* PostWithMediaTableViewCell.swift */,
+				7D70F78127A5B71400999AA5 /* PostWithMediaTableViewCell.xib */,
 			);
 			path = TwitterView;
 			sourceTree = "<group>";
@@ -138,6 +148,15 @@
 				7D090BAC27A41BAE0012F367 /* TwitterPostsViewModel+ParseJSONextension.swift */,
 			);
 			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		7D70F77D27A5B5F200999AA5 /* StandartTools+Extension */ = {
+			isa = PBXGroup;
+			children = (
+				7D70F77E27A5B61E00999AA5 /* Date+Extension.swift */,
+				7D70F78427A5BD6100999AA5 /* UIImageView+DownloadImageExtension.swift */,
+			);
+			path = "StandartTools+Extension";
 			sourceTree = "<group>";
 		};
 		7DE4BC8027A00C820025365F = {
@@ -161,6 +180,7 @@
 		7DE4BC8B27A00C820025365F /* Sbertroyka */ = {
 			isa = PBXGroup;
 			children = (
+				7D70F77D27A5B5F200999AA5 /* StandartTools+Extension */,
 				7D1796FC27A3D84A00E29B26 /* Model */,
 				7D17970827A403E000E29B26 /* ViewModel */,
 				7D17970427A3F17100E29B26 /* View */,
@@ -242,9 +262,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7D70F78327A5B71400999AA5 /* PostWithMediaTableViewCell.xib in Resources */,
 				7DE4BC9927A00C850025365F /* LaunchScreen.storyboard in Resources */,
 				7DE4BC9627A00C850025365F /* Assets.xcassets in Resources */,
-				7D17970227A3DAB800E29B26 /* TestXib.xib in Resources */,
+				7D17970227A3DAB800E29B26 /* PostTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -298,17 +319,20 @@
 			buildActionMask = 2147483647;
 			files = (
 				7D17970A27A4040800E29B26 /* TwitterPostsViewModel.swift in Sources */,
+				7D70F78227A5B71400999AA5 /* PostWithMediaTableViewCell.swift in Sources */,
 				7D81676B27A543F7006408F1 /* Colors.swift in Sources */,
 				7D090BB627A464D00012F367 /* LoadingViewElementsSize.swift in Sources */,
 				7D1796FE27A3D96C00E29B26 /* TwitterPostsViewControllerData.swift in Sources */,
 				7DE4BC9127A00C820025365F /* TwitterPostsViewController.swift in Sources */,
+				7D70F77F27A5B61E00999AA5 /* Date+Extension.swift in Sources */,
 				7D090BB427A460A50012F367 /* TwitterPostsLoadingView.swift in Sources */,
 				7DE4BC8D27A00C820025365F /* AppDelegate.swift in Sources */,
 				7D81676727A52E06006408F1 /* TwitterPostsErrorView.swift in Sources */,
-				7D17970127A3DAB800E29B26 /* TestXib.swift in Sources */,
+				7D17970127A3DAB800E29B26 /* PostTableViewCell.swift in Sources */,
 				7DE4BC8F27A00C820025365F /* SceneDelegate.swift in Sources */,
 				7D17970C27A4050500E29B26 /* API.swift in Sources */,
 				7D17970E27A4075F00E29B26 /* Utils.swift in Sources */,
+				7D70F78527A5BD6100999AA5 /* UIImageView+DownloadImageExtension.swift in Sources */,
 				7D81676927A54086006408F1 /* ErrorViewElementsSize.swift in Sources */,
 				7D090BB227A456350012F367 /* TwitterPostsView.swift in Sources */,
 				7D090BAD27A41BAE0012F367 /* TwitterPostsViewModel+ParseJSONextension.swift in Sources */,

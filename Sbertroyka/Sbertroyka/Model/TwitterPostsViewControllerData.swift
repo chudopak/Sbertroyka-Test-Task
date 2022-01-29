@@ -15,10 +15,10 @@ enum ViewData {
 	case failure(FailCode)
 	
 	struct PostsDataArray {
-		let posts: [PostData]?
+		let posts: [PostData]
 		
 		init() {
-			posts = nil
+			posts = [PostData]()
 		}
 		
 		init(posts: [PostData]) {
@@ -28,7 +28,7 @@ enum ViewData {
 	
 	struct PostData {
 		var text: String = ""
-		var media: UIImage?
+		var media: String?
 		var craetionDate = Date()
 		var id = ""
 		var favoriteCount = ""

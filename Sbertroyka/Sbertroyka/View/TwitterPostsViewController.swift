@@ -6,12 +6,17 @@
 //
 
 import UIKit
+import SafariServices
 
-class TwitterPostsViewController: UIViewController {
+protocol TwitterPostsViewControllerDelegate: AnyObject {
+	func presentPostViewController(for vc: SFSafariViewController, animated: Bool)
+}
+
+class TwitterPostsViewController: UIViewController, TwitterPostsViewControllerDelegate {
 	
 	private var viewModel: TwitterPostsViewModelProtocol!
 	
-	private lazy var postsView = TwitterPostsView(frame: view.bounds)
+	private lazy var postsView = TwitterPostsView(viewModel: viewModel, frame: view.bounds)
 	private lazy var loadingView = TwitterPostsLoadingView(frame: view.bounds)
 	private lazy var errorView = TwitterPostsErrorView(viewModel: viewModel)
 	
@@ -79,6 +84,7 @@ class TwitterPostsViewController: UIViewController {
 		view.addSubview(postsView)
 		view.addSubview(loadingView)
 		view.addSubview(errorView)
+		postsView.delegate = self
 		postsView.isHidden = true
 		errorView.isHidden = true
 		setConstraints()
@@ -86,6 +92,11 @@ class TwitterPostsViewController: UIViewController {
 		loadingView.activityIndicator.startAnimating()
 		errorView.setConstraints()
 	}
+	
+	func presentPostViewController(for vc: SFSafariViewController, animated: Bool) {
+		present(vc, animated: animated, completion: nil)
+	}
+	
 	
 	private func setConstraints() {
 		NSLayoutConstraint.activate([
