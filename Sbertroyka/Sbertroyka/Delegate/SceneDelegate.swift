@@ -22,8 +22,8 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 		let twitterPostsViewController = TwitterPostsViewController(viewModel: viewModel)
 		let navigationController = UINavigationController(rootViewController: twitterPostsViewController)
 		navigationController.navigationBar.prefersLargeTitles = true
-		
 		navigationController.modalPresentationStyle = .fullScreen
+		
 		window!.rootViewController = navigationController
 		window!.makeKeyAndVisible()
 	}

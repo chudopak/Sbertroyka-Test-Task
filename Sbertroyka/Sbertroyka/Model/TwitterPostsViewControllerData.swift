@@ -29,7 +29,7 @@ enum ViewData {
 	struct PostData {
 		var text: String = ""
 		var media: String?
-		var craetionDate = Date()
+		var creationDate = Date()
 		var id = ""
 		var favoriteCount = ""
 		var retweetCount = ""

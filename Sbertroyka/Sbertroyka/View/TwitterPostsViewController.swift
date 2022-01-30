@@ -63,10 +63,10 @@ class TwitterPostsViewController: UIViewController, TwitterPostsViewControllerDe
 			postsView.isHidden = false
 			loadingView.isHidden = true
 			errorView.isHidden = true
+			postsView.posts = postsDataArray
 			if (loadingView.activityIndicator.isAnimating) {
 				loadingView.activityIndicator.stopAnimating()
 			}
-			postsView.posts = postsDataArray
 		case .failure(let errorCase):
 			postsView.isHidden = true
 			loadingView.isHidden = true
@@ -81,8 +81,6 @@ class TwitterPostsViewController: UIViewController, TwitterPostsViewControllerDe
 	private func configureView() {
 		view.backgroundColor = adaptiveViewBackgroundColor
 		title = "Новости"
-//		navigationController?.navigationBar.barTintColor = UIColor(named: "background")
-//		navigationController?.view.backgroundColor = UIColor(named: "background")
 		navigationController?.navigationBar.backgroundColor = UIColor(named: "background")
 		view.backgroundColor = UIColor(named: "background")
 		

@@ -12,8 +12,8 @@ extension TwitterPostsViewModel {
 	
 	func parseJSON(data: Data) -> [ViewData.PostData]? {
 
-		guard let twittData = getDataJSON(data: data) else { return (nil) }
-		let postsArray = parseJSONToPostsArray(json: twittData)
+		guard let tweetData = getDataJSON(data: data) else { return (nil) }
+		let postsArray = parseJSONToPostsArray(json: tweetData)
 		return (postsArray)
 	}
 	
@@ -55,7 +55,7 @@ extension TwitterPostsViewModel {
 		}
 		if (post["createdAt"].exists() && post["createdAt"].double != nil) {
 			let seccondsFrom1970 = post["createdAt"].doubleValue * 0.001
-			postData.craetionDate = Date(timeIntervalSince1970: seccondsFrom1970)
+			postData.creationDate = Date(timeIntervalSince1970: seccondsFrom1970)
 		}
 		if (post["retweetCount"].exists()) {
 			postData.retweetCount = compressPostNumbers(numberStr: post["retweetCount"].stringValue)

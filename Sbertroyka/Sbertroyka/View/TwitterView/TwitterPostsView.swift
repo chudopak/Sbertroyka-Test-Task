@@ -15,17 +15,19 @@ extension TwitterPostsView : UITableViewDelegate, UITableViewDataSource {
 	}
 	
 	func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-		//indexPath.row % 4 == 0 is for test cause no post with media :)
+		
 		if (indexPath.row == 0) {
 			if let cell = tableView.dequeueReusableCell(withIdentifier: "static", for: indexPath) as? StaticTableViewCell {
 				return (cell)
 			}
-		} else if (posts.posts[indexPath.row - 1].media != nil && indexPath.row % 4 == 0) {
+		}
+		//indexPath.row % 4 == 0 is for test cause no post with media :)
+		else if (posts.posts[indexPath.row - 1].media != nil && indexPath.row % 4 == 0) {
 			if let cell = tableView.dequeueReusableCell(withIdentifier: "cellWithMedia", for: indexPath) as? PostWithMediaTableViewCell {
 				cell.postLabel.text = posts.posts[indexPath.row - 1].text
 				cell.retweetsLabel.text = posts.posts[indexPath.row - 1].retweetCount
 				cell.favoritesLabel.text = posts.posts[indexPath.row - 1].favoriteCount
-				cell.dateLabel.text = posts.posts[indexPath.row - 1].craetionDate.timeAgoDisplay()
+				cell.dateLabel.text = posts.posts[indexPath.row - 1].creationDate.timeAgoDisplay()
 				cell.media.download(from: posts.posts[indexPath.row - 1].media!)
 				cell.media.contentMode = .scaleAspectFill
 				return (cell)
@@ -35,7 +37,7 @@ extension TwitterPostsView : UITableViewDelegate, UITableViewDataSource {
 				cell.postText.text = posts.posts[indexPath.row - 1].text
 				cell.retweetLabel.text = posts.posts[indexPath.row - 1].retweetCount
 				cell.favoriteLabel.text = posts.posts[indexPath.row - 1].favoriteCount
-				cell.date.text = posts.posts[indexPath.row - 1].craetionDate.timeAgoDisplay()
+				cell.date.text = posts.posts[indexPath.row - 1].creationDate.timeAgoDisplay()
 				return (cell)
 			}
 		}
@@ -55,16 +57,14 @@ extension TwitterPostsView : UITableViewDelegate, UITableViewDataSource {
 class TwitterPostsView: UIView, SFSafariViewControllerDelegate {
 	
 	private lazy var tableView = UITableView()
-	
 	private var viewModel: TwitterPostsViewModelProtocol!
+	weak var delegate: TwitterPostsViewControllerDelegate!
 	
 	var posts = ViewData.PostsDataArray() {
 		didSet {
 			tableView.reloadData()
 		}
 	}
-	
-	weak var delegate: TwitterPostsViewControllerDelegate!
 	
 	lazy var refreshControl: UIRefreshControl = {
 		let control = UIRefreshControl()
@@ -93,9 +93,7 @@ class TwitterPostsView: UIView, SFSafariViewControllerDelegate {
 	
 	@objc private func refreshPosts(sender: UIRefreshControl) {
 		viewModel.fetchPostData()
-		if (refreshControl.isRefreshing) {
-			refreshControl.endRefreshing()
-		}
+		refreshControl.endRefreshing()
 	}
 	
 	fileprivate func presentPostInSafari(for index: Int = 0, isMainPage: Bool = false) {
